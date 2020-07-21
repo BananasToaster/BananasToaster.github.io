@@ -1,0 +1,147 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@keyframes negro {
+    0%
+    {
+        background-position: 0% 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0% 50%;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Century Gothic", "Arial", "sans-serif";
+}
+
+.banner{
+    width: 100%;
+    position: absolute;
+}
+
+.banner ul{
+    height: 50px;
+    text-align: center;
+}
+
+.banner ul li{
+    display: inline-flex;
+    padding: 40px, 15px;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+    animation: transitionIn 1s;
+}
+
+.banner h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 19%;
+    animation: transitionIn 1s;
+    text-shadow: 0 0px 0 rgba(0, 0, 0, 5);
+    font-size: 50px;
+    color: #fff;
+    animation: type 10s steps(42) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes type{
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+}
+
+
+.banner a{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    animation: transitionIn 1s;
+}
+
+
+.coolhover::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    transition: all .3s;
+}
+
+.coolhover:hover::after{
+    width: 100%;
+    transition: all .3s;
+}
+
+.animation-area{
+    background: linear-gradient(-45deg, #EA66FF, #897AFF, #FF66A3, #FFF67C);
+    background-size: 400% 400%;
+    width: 100%;
+    height: 100vh;
+    animation:negro 10s ease-in-out infinite;
+}
+
+span::before{
+    content: '';
+    animation: coolstuff infinite 20s;
+}
+
+
+
+@keyframes coolstuff{
+    0%
+    {
+        content: 'balls';
+    }
+    20%
+    {
+        content: 'peehole';
+    }
+    40%
+    {
+        content: 'bladder';
+    }
+    60%
+    {
+        content: 'foreskin';
+    }
+    80%
+    {
+        content: 'spongiosum';
+    }
+    100%
+    {
+        content: 'website';
+    }
+}
+
