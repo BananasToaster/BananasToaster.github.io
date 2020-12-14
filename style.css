@@ -104,7 +104,7 @@ body{
 }
 
 .animation-area{
-    background: linear-gradient(-45deg, #EA66FF, #897AFF, #FF66A3, #FFF67C);
+    background: linear-gradient(-45deg, #101010, #222, #111, #222);
     background-size: 400% 400%;
     width: 100%;
     height: 100vh;
